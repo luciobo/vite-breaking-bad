@@ -1,11 +1,11 @@
 <template>
     <div class="d-flex selezione-categoria">
         <div class="form-floating">
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+            <select class="form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Seleziona Categoria</option>
+                <option value="1">Massacro</option>
+                <option value="2">Action</option>
+                <option value="3">Fantasy</option>
             </select>
         </div>
     </div>
@@ -69,6 +69,7 @@ export default {
     border-radius: 0;
     padding: .3rem 1rem;
     position: relative;
-    bottom: 70px;
+    bottom: 50px;
+    left: -28px;
 }
 </style>
