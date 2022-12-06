@@ -24,7 +24,7 @@ export default {
         <div>
             <TheHeader></TheHeader>
         </div>
-        <div class="bg-light">
+        <div class="bg-light container">
             <TheMain></TheMain>
         </div>
         <div>
