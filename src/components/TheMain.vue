@@ -2,7 +2,7 @@
     <div class="container">
         <div class=" py-5">
             <div class="row d-flex g-5">
-                <div class="col-2 col"
+                <div class="mia-col"
                     v-for="(listaRickeMortHTML, i) in rickEmorty">
                     <div class="card h-100">
                         <img :src="listaRickeMortHTML.image" class="card-img-top" alt="...">
@@ -50,4 +50,7 @@ export default {
     color: white;
 }
 
+.mia-col {
+    width: calc(100%/5);
+}
 </style>
