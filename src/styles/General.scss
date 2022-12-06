@@ -1,0 +1,40 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.testo-rosso {
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+
+.background-body {
+    background-color: #2E3A46;
+    height: 100vh;
+}
+
+.background-card {
+    background-color: #2E3A46;
+}
+
+.background-jumbotron {
+    background-image: url(/public/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-footer {
+    background-color: #303030;
+    position: relative;
+    z-index: 10;
+}
+
+.colore-testo-link {
+    color: #797979;
+    font-size: 12px;
+    font-weight: bold;
+}

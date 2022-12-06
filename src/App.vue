@@ -5,7 +5,7 @@ import TheFooter from "./components/TheFooter.vue"
 
 
 export default {
-    components: { TheHeader, TheMain, TheFooter, },
+    components: { TheHeader, TheMain, TheFooter},
 
     data() {
         return {
@@ -20,11 +20,11 @@ export default {
 
 
 <template>
-    <div class="">
+    <div class="background-body">
         <div>
             <TheHeader></TheHeader>
         </div>
-        <div>
+        <div class="bg-light">
             <TheMain></TheMain>
         </div>
         <div>
