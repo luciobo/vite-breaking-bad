@@ -13,7 +13,7 @@
         <div class=" py-5">
             <div class="row d-flex g-5">
                 <div class="mia-col"
-                    v-for="(listaRickeMortHTML, i) in rickEmorty">
+                    v-for="(listaRickeMortHTML, i) in store.rickEmorty">
                     <div class="card h-100 p-2">
                         <img :src="listaRickeMortHTML.image" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -32,11 +32,13 @@
 <script>
 import axios from "axios";
 
+import { store } from "../store.js"
 
 export default {
     data() {
         return {
-            rickEmorty: []
+            // rickEmorty: [],
+            store
         };
     },
     methods: {},
@@ -46,7 +48,7 @@ export default {
         axios.get("https://rickandmortyapi.com/api/character")
             .then(resp => {
                 console.log(resp);
-                this.rickEmorty = resp.data.results
+                this.store.rickEmorty = resp.data.results
 
             })
 
@@ -55,7 +57,6 @@ export default {
 </script>
 
 <style scoped>
-
 .card {
     background-color: #2E3A46;
     color: white;
